@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hw-15</title>
+    <style>
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .holder {
+        display: flex;
+        border: 3px solid black;
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        flex-wrap: wrap;
+        overflow: hidden;
+      }
+
+      .item {
+        padding: 15px;
+        flex-basis: 350px;
+      }
+
+      .item:nth-child(1) {
+        background-color: #fd645d;
+        flex-grow: 1.5;
+      }
+
+      .item:nth-child(2) {
+        background-color: #4983b1;
+        order: 4;
+        flex-grow: 1;
+        flex-basis: 250px;
+      }
+
+      .item:nth-child(3) {
+        background-color: #652781;
+        order: 3;
+        flex-grow: 1;
+        flex-basis: 250px;
+      }
+
+      .item:nth-child(4) {
+        background-color: #0e7f20;
+        order: 5;
+        flex-grow: 1;
+        flex-basis: 250px;
+      }
+
+      .item:nth-child(5) {
+        background-color: #fdf098;
+        flex-grow: 1.5;
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="holder">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+      </div>
+    </div>
+  </body>
+</html>
